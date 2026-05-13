@@ -3,6 +3,7 @@
 icon: fas fa-info-circle
 order: 4
 ---
+
 # About Me
 
 ## Hey, I'm Anup! 👋
@@ -35,5 +36,6 @@ I believe the best ideas come from stepping away from the screen once in a while
 I love hearing from people — questions, collabs, or just a good old "hey." You can find me on [GitHub](https://anuprm.github.io/), [Twitter](https://x.com/anup_rm), and [LinkedIn](https://www.linkedin.com/in/anup-m-75aa56222/), and if you're on HTB or THM, maybe I'll see you on the leaderboard. 😄
 
 Glad you're here. Stick around, there's plenty to explore. 🔐
+
 ---
 
