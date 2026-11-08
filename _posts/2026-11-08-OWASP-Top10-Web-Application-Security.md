@@ -15,8 +15,8 @@ image:
 
 ## Table of Contents
 
-1. [Introduction](#introduction)
-2. [OWASP Top 10:2025 Overview](#owasp-top-102025-overview)
+## 1. Introduction
+## 2. OWASP Top 10:2025 Overview
 3. [A01: Broken Access Control](#a012025--broken-access-control)
 4. [A02: Security Misconfiguration](#a022025--security-misconfiguration)
 5. [A03: Software Supply Chain Failures](#a032025--software-supply-chain-failures)
@@ -31,8 +31,7 @@ image:
 14. [Recommended Security Testing Tools](#recommended-security-testing-tools)
 15. [Security Best Practices](#web-application-security-best-practices)
 16. [Conclusion](#Conclusion)
-17. [References](#References)
-
+## 17. References and Learning Resources
 ---
 
 ## 1. Introduction
