@@ -30,8 +30,8 @@ image:
 13. [Penetration Testing Methodology](#web-application-penetration-testing-methodology)
 14. [Recommended Security Testing Tools](#recommended-security-testing-tools)
 15. [Security Best Practices](#web-application-security-best-practices)
-16. [Conclusion](#conclusion)
-17. [References](#references)
+16. [Conclusion](#Conclusion)
+17. [References](#References)
 
 ---
 
