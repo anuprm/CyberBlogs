@@ -49,6 +49,27 @@ jobs:
         run: bundle exec jekyll b -d "_site${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: "production"
+          
+      # DEBUG STEP - Checks JavaScript file and references
+      - name: Debug generated files
+        run: |
+          echo "================================"
+          echo "Checking generated app.min.js"
+          echo "================================"
+
+          find _site -name "app.min.js" -print
+
+          echo "================================"
+          echo "Checking JavaScript references"
+          echo "================================"
+
+          grep -R -n -o 'app.min.js[^"]*' _site --include="*.html" || true
+
+          echo "================================"
+          echo "Checking generated directories"
+          echo "================================"
+
+          find _site -maxdepth 3 -type d -print
 
       - name: Test site
         run: |
