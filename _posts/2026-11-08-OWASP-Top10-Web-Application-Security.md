@@ -12,26 +12,6 @@ image:
 > A practical guide to understanding, identifying, testing, and mitigating the most critical web application security vulnerabilities.
 
 ![OWASP](https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/OWASP_black_logo.svg/500px-OWASP_black_logo.svg.png)
-
-## Table of Contents
-
-1. [Introduction](#introduction)
-2. [OWASP Top 10:2025 Overview](#owasp-top-102025-overview)
-3. [A01: Broken Access Control](#a012025--broken-access-control)
-4. [A02: Security Misconfiguration](#a022025--security-misconfiguration)
-5. [A03: Software Supply Chain Failures](#a032025--software-supply-chain-failures)
-6. [A04: Cryptographic Failures](#a042025--cryptographic-failures)
-7. [A05: Injection](#a052025--injection)
-8. [A06: Insecure Design](#a062025--insecure-design)
-9. [A07: Authentication Failures](#a072025--authentication-failures)
-10. [A08: Software or Data Integrity Failures](#a082025--software-or-data-integrity-failures)
-11. [A09: Security Logging & Alerting Failures](#a092025--security-logging--alerting-failures)
-12. [A10: Mishandling of Exceptional Conditions](#a102025--mishandling-of-exceptional-conditions)
-13. [Penetration Testing Methodology](#web-application-penetration-testing-methodology)
-14. [Recommended Security Testing Tools](#recommended-security-testing-tools)
-15. [Security Best Practices](#web-application-security-best-practices)
-16. [Conclusion](#Conclusion)
-17. [References](#references)
 ---
 
 ## 1. Introduction
