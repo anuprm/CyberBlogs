@@ -1,4 +1,5 @@
 ---
+
 title: "Network Penetration Testing" 
 date: 2026-11-10 00:00:00 +0530
 categories: [Network Security, Penetration Testing, Ethical Hacking]
@@ -9,7 +10,6 @@ image:
 ---
 
 # Network Penetration Testing: A Complete Beginner-to-Advanced Guide
----
 
 # 1. Introduction to Network Penetration Testing
 
@@ -714,7 +714,7 @@ The objective is to ensure that only necessary communication is permitted.
 
 Wireless penetration testing evaluates the security of Wi-Fi infrastructure.
 
-### Areas to Test
+## Areas to Test
 ![Desktop View](assets/img/netwok/Wireless Network Penetration Testing.jfif){: .w-50 .right}
 - WPA2/WPA3 encryption
 - Weak Wi-Fi passwords
@@ -788,7 +788,7 @@ The following tools are commonly used by penetration testers and security analys
 | BloodHound | Active Directory analysis |
 | NetExec | Network service assessment |
 
-### Recommended Official Resources
+## Recommended Official Resources
 
 - [Nmap](https://nmap.org/)
 - [Wireshark](https://www.wireshark.org/)
@@ -928,7 +928,7 @@ These terms are related but not identical.
 | Business impact | Estimates risk | Demonstrates realistic impact |
 | Deliverable | Vulnerability report | Security assessment report |
 
-**Example:**
+## Example:
 
 A vulnerability scanner identifies an outdated service.
 
@@ -1133,13 +1133,14 @@ The most effective way to develop these skills is through structured learning an
 7. Network segmentation
 8. Professional penetration testing reporting
 
-**Remember:** The objective of ethical hacking is not simply to compromise systems. It is to identify weaknesses, demonstrate their security impact responsibly, and help organizations strengthen their defenses.
+> **Remember:** The objective of ethical hacking is not simply to compromise systems. It is to identify weaknesses, demonstrate their security impact responsibly, and help organizations strengthen their defenses.
+{: .prompt-info }
 
 ---
 
 # 23. References
 
-### Network Security and Testing
+## Network Security and Testing
 
 - [Nmap Official Documentation](https://nmap.org/book/man.html)
 - [Wireshark Documentation](https://www.wireshark.org/docs/)
@@ -1147,14 +1148,14 @@ The most effective way to develop these skills is through structured learning an
 - [PTES](https://pentest-standard.readthedocs.io/en/latest/tree.html)
 - [MITRE ATT&CK](https://attack.mitre.org/)
 
-### Vulnerability Research
+## Vulnerability Research
 
 - [National Vulnerability Database](https://nvd.nist.gov/)
 - [CVE Program](https://www.cve.org/)
 - [Exploit Database](https://www.exploit-db.com/)
 - [CISA Known Exploited Vulnerabilities Catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog)
 
-### Training and Labs
+## Training and Labs
 
 - [Kali Linux](https://www.kali.org/)
 - [Metasploitable 2](https://docs.rapid7.com/metasploit/metasploitable-2/)
@@ -1164,7 +1165,8 @@ The most effective way to develop these skills is through structured learning an
 
 ---
 
-**Disclaimer:** This article is intended for educational purposes and authorized cybersecurity assessments. Always obtain explicit permission before scanning, testing, or attempting to exploit any network, system, or service. Follow applicable laws, organizational policies, and rules of engagement.
+> **Disclaimer:** This article is intended for educational purposes and authorized cybersecurity assessments. Always obtain explicit permission before scanning, testing, or attempting to exploit any network, system, or service. Follow applicable laws, organizational policies, and rules of engagement.
+{: .prompt-danger }
 
 **Category:** Cybersecurity | Ethical Hacking | Penetration Testing  
 **Level:** Beginner to Advanced
