@@ -11,7 +11,7 @@ image:
 
 # Network Penetration Testing: A Complete Beginner-to-Advanced Guide
 
-# 1. Introduction to Network Penetration Testing
+## 1. Introduction to Network Penetration Testing
 
 Network Penetration Testing (Network Pentesting) is an authorized cybersecurity assessment in which security professionals simulate real-world attacks against an organization's network infrastructure to identify vulnerabilities, misconfigurations, weak security controls, and potential attack paths.
 
@@ -50,11 +50,11 @@ A penetration tester evaluates these components to identify security weaknesses 
 
 ---
 
-# 2. Types of Network Penetration Testing
+## 2. Types of Network Penetration Testing
 
 Network penetration testing can be divided into several categories.
 
-## 2.1 External Network Penetration Testing
+### 2.1 External Network Penetration Testing
 ![Desktop View](assets/img/netwok/2.jfif){: .w-50 .right}
 External penetration testing evaluates infrastructure accessible from the public internet.
 
@@ -70,7 +70,7 @@ External penetration testing evaluates infrastructure accessible from the public
 > **Objective:** Identify security weaknesses that an external attacker could potentially exploit.
 {: .prompt-info }
 
-## 2.2 Internal Network Penetration Testing
+### 2.2 Internal Network Penetration Testing
 
 Internal penetration testing evaluates the security of an organization's internal network.
 ![Desktop View](assets/img/netwok/3.jfif){: .w-50 .right}
@@ -88,7 +88,7 @@ Internal penetration testing evaluates the security of an organization's interna
 > **Objective:** Determine what an attacker could accomplish after obtaining internal network access.
 {: .prompt-info }
 
-## 2.3 Wireless Network Penetration Testing
+### 2.3 Wireless Network Penetration Testing
 
 Wireless penetration testing evaluates the security of Wi-Fi infrastructure.
 ![Desktop View](assets/img/netwok/4.jfif){: .w-50 .right}
@@ -103,7 +103,7 @@ Wireless penetration testing evaluates the security of Wi-Fi infrastructure.
 - Authentication mechanisms
 - Wireless client isolation
 
-## 2.4 Cloud Network Penetration Testing
+### 2.4 Cloud Network Penetration Testing
 ![Desktop View](assets/img/netwok/5.jfif){: .w-50 .right}
 Cloud network penetration testing evaluates network security configurations in cloud environments.
 
@@ -117,7 +117,7 @@ Cloud network penetration testing evaluates network security configurations in c
 - Public cloud exposure
 - Cloud network segmentation
 
-## 2.5 Network Segmentation Testing
+### 2.5 Network Segmentation Testing
 ![Desktop View](assets/img/netwok/6.jfif){: .w-50 .right}
 Network segmentation testing determines whether different network zones are properly isolated.
 
@@ -133,7 +133,7 @@ The objective is to verify that unauthorized communication between network segme
 
 ---
 
-# 3. Penetration Testing Approaches
+## 3. Penetration Testing Approaches
 
 There are three common penetration testing approaches.
 
@@ -151,7 +151,7 @@ There are three common penetration testing approaches.
 
 ---
 
-# 4. Network Penetration Testing Methodology
+## 4. Network Penetration Testing Methodology
 
 A professional network penetration test generally follows a structured methodology.
 
@@ -167,7 +167,7 @@ The following phases provide a practical assessment workflow:
 8. Post-exploitation assessment
 9. Reporting and remediation
 
-## 4.1 Pre-engagement and Planning
+### 4.1 Pre-engagement and Planning
 
 Before testing begins, define the scope and obtain written authorization.
 
@@ -183,7 +183,7 @@ Important considerations:
 - Data-handling requirements
 - Rules of engagement
 
-### Example Scope
+#### Example Scope
 
 ```text
 Engagement: Internal Network Penetration Test
@@ -215,17 +215,17 @@ Prohibited Activities:
 
 ---
 
-# 5. Reconnaissance
+## 5. Reconnaissance
 
 Reconnaissance is the process of collecting information about the target infrastructure.
 
 It is divided into two categories.
 
-## 5.1 Passive Reconnaissance
+### 5.1 Passive Reconnaissance
 
 Passive reconnaissance collects information without directly probing target systems.
 
-### Common Tools
+#### Common Tools
 
 - WHOIS
 - DNSDumpster
@@ -234,7 +234,7 @@ Passive reconnaissance collects information without directly probing target syst
 - theHarvester
 - Amass
 
-### Information Collected
+#### Information Collected
 
 - IP address ranges
 - DNS records
@@ -243,7 +243,7 @@ Passive reconnaissance collects information without directly probing target syst
 - Public subdomains
 - Organization infrastructure
 
-## 5.2 Active Reconnaissance
+### 5.2 Active Reconnaissance
 
 Active reconnaissance involves directly interacting with authorized target systems.
 
@@ -256,13 +256,13 @@ Examples:
 
 ---
 
-# 6. Host Discovery
+## 6. Host Discovery
 
 Host discovery determines which devices are active on a network.
 
 One of the most commonly used tools is Nmap.
 
-## Basic Host Discovery
+### Basic Host Discovery
 
 ```bash
 nmap -sn 192.168.10.0/24
@@ -274,7 +274,7 @@ nmap -sn 192.168.10.0/24
 - `-sn`: Performs host discovery without a port scan.
 - `192.168.10.0/24`: Specifies the authorized network range.
 
-### Other Useful Commands
+#### Other Useful Commands
 
 Display network interfaces:
 
@@ -299,13 +299,13 @@ arp -a
 
 ---
 
-# 7. Port Scanning
+## 7. Port Scanning
 
 Port scanning identifies open, closed, and filtered TCP/UDP ports.
 
 An open port indicates that a service is listening for network connections.
 
-## 7.1 Common Network Ports
+### 7.1 Common Network Ports
 
 | Port | Service | Purpose |
 |---|---|---|
@@ -326,45 +326,45 @@ An open port indicates that a service is listening for network connections.
 | 5432 | PostgreSQL | Database |
 | 8080 | HTTP Alternative | Web applications |
 
-## 7.2 Useful Nmap Commands
+### 7.2 Useful Nmap Commands
 
-### Basic TCP Scan
+#### Basic TCP Scan
 
 ```bash
 nmap 192.168.10.10
 ```
 
-### Scan Specific Ports
+#### Scan Specific Ports
 
 ```bash
 nmap -p 22,80,443,445 192.168.10.10
 ```
 
-### Scan All TCP Ports
+#### Scan All TCP Ports
 
 ```bash
 nmap -p- 192.168.10.10
 ```
 
-### Detect Service Versions
+#### Detect Service Versions
 
 ```bash
 nmap -sV 192.168.10.10
 ```
 
-### Operating System Detection
+#### Operating System Detection
 
 ```bash
 nmap -O 192.168.10.10
 ```
 
-### Combined Enumeration
+#### Combined Enumeration
 
 ```bash
 nmap -sV -O -p 1-1000 192.168.10.10
 ```
 
-### Save Scan Results
+#### Save Scan Results
 
 ```bash
 nmap -sV -oA network_scan 192.168.10.10
@@ -374,7 +374,7 @@ This generates multiple output formats for further analysis.
 
 ---
 
-# 8. Service Enumeration
+## 8. Service Enumeration
 
 Service enumeration identifies detailed information about applications and services running on open ports.
 
@@ -389,7 +389,7 @@ Service enumeration identifies detailed information about applications and servi
 | RDP | Encryption and authentication |
 | SNMP | Version and access control |
 
-## 8.1 Useful Enumeration Tools
+### 8.1 Useful Enumeration Tools
 
 - Netcat
 - enum4linux-ng
@@ -398,7 +398,7 @@ Service enumeration identifies detailed information about applications and servi
 - Nikto
 - Nmap NSE
 
-### SMB Enumeration
+#### SMB Enumeration
 
 Check SMB protocol information:
 
@@ -418,7 +418,7 @@ Use these commands only against authorized systems.
 
 ---
 
-# 9. Vulnerability Assessment
+## 9. Vulnerability Assessment
 
 Vulnerability assessment identifies security weaknesses in discovered systems and services.
 
@@ -435,7 +435,7 @@ Vulnerability assessment identifies security weaknesses in discovered systems an
 - Weak encryption
 - Improper network segmentation
 
-## 9.1 Important Vulnerability Assessment Tools
+### 9.1 Important Vulnerability Assessment Tools
 
 | Tool | Purpose |
 |---|---|
@@ -444,7 +444,7 @@ Vulnerability assessment identifies security weaknesses in discovered systems an
 | Nmap NSE | Service-specific security checks |
 | Qualys | Enterprise vulnerability management |
 
-### Example: Nmap Vulnerability Checks
+#### Example: Nmap Vulnerability Checks
 
 ```bash
 nmap --script vuln 192.168.10.10
@@ -455,7 +455,7 @@ This executes relevant vulnerability detection scripts against the specified hos
 > **Note:** Some vulnerability scripts may be intrusive. Review the scripts and authorization before executing them.
 {: .prompt-warning }
 
-## 9.2 CVE
+### 9.2 CVE
 
 CVE stands for Common Vulnerabilities and Exposures.
 
@@ -469,7 +469,7 @@ CVE-2021-44228
 
 This identifies the Log4Shell vulnerability in Apache Log4j.
 
-## 9.3 CVSS
+### 9.3 CVSS
 
 CVSS stands for Common Vulnerability Scoring System.
 
@@ -487,7 +487,7 @@ CVSS severity should be considered alongside business impact, exploitability, as
 
 ---
 
-# 10. Exploitation and Security Validation
+## 10. Exploitation and Security Validation
 
 Exploitation is the controlled validation of whether an identified weakness can actually be used to compromise a system.
 
@@ -504,7 +504,7 @@ The objective is to establish the real security impact of a vulnerability.
 7. Incorrect firewall rules
 8. Poor network segmentation
 
-## 10.1 Exploitation Frameworks and Tools
+### 10.1 Exploitation Frameworks and Tools
 
 | Tool | Purpose |
 |---|---|
@@ -512,7 +512,7 @@ The objective is to establish the real security impact of a vulnerability.
 | Burp Suite | Web application security testing |
 | Exploit Database | Vulnerability and exploit research |
 
-## 10.2 Exploitation Validation Workflow
+### 10.2 Exploitation Validation Workflow
 
 1. Identify the suspected vulnerability.
 2. Confirm the affected software and version.
@@ -528,12 +528,12 @@ Avoid destructive payloads, persistence, uncontrolled credential dumping, and un
 
 ---
 
-# 11. Post-Exploitation Assessment
+## 11. Post-Exploitation Assessment
 
 Post-exploitation evaluates what an attacker could potentially accomplish after gaining an initial foothold.
 ![Desktop View](assets/img/netwok/Lateral movement.jfif)
 
-## 11.1 Privilege Escalation
+### 11.1 Privilege Escalation
 
 Determines whether an ordinary user could obtain higher privileges because of security weaknesses.
 
@@ -545,7 +545,7 @@ Examples:
 - Unpatched operating systems
 - Insecure scheduled tasks
 
-## 11.2 Lateral Movement
+### 11.2 Lateral Movement
 
 Lateral movement is the process of moving from one compromised system to another within a network.
 
@@ -566,11 +566,11 @@ Domain Infrastructure
 
 The tester investigates whether network segmentation, identity controls, and endpoint security prevent these transitions.
 
-## 11.3 Active Directory Security Assessment
+### 11.3 Active Directory Security Assessment
 
 Active Directory (AD) is a Microsoft directory service commonly used in enterprise environments.
 
-### Important Assessment Areas
+#### Important Assessment Areas
 
 - Domain users and groups
 - Domain administrators
@@ -583,7 +583,7 @@ Active Directory (AD) is a Microsoft directory service commonly used in enterpri
 - Domain controller exposure
 - Trust relationships
 
-### Important Tools
+#### Important Tools
 
 | Tool | Purpose |
 |---|---|
@@ -594,7 +594,7 @@ Active Directory (AD) is a Microsoft directory service commonly used in enterpri
 
 BloodHound helps visualize relationships and potentially dangerous privilege paths within Active Directory.
 
-## 11.4 Network Segmentation Validation
+### 11.4 Network Segmentation Validation
 
 Example segmentation policy:
 
@@ -610,7 +610,7 @@ The objective is to verify that network security boundaries operate correctly.
 
 ---
 
-# 12. Network Traffic Analysis
+## 12. Network Traffic Analysis
 
 Network traffic analysis helps identify suspicious communications, insecure protocols, and potential security incidents.
 
@@ -618,7 +618,7 @@ Network traffic analysis helps identify suspicious communications, insecure prot
 
 Wireshark is one of the most important tools for this task.
 
-## 12.1 Useful Wireshark Display Filters
+### 12.1 Useful Wireshark Display Filters
 
 | Filter | Purpose |
 |---|---|
@@ -633,7 +633,7 @@ Wireshark is one of the most important tools for this task.
 | `tcp.flags.syn == 1` | TCP SYN packets |
 | `tcp.analysis.retransmission` | TCP retransmissions |
 
-## 12.2 Packet Capture Using Tcpdump
+### 12.2 Packet Capture Using Tcpdump
 
 Capture traffic:
 
@@ -647,7 +647,7 @@ Read a saved capture:
 tcpdump -r capture.pcap
 ```
 
-### What Should Be Investigated?
+#### What Should Be Investigated?
 
 - Suspicious outbound connections
 - Unusual DNS requests
@@ -658,13 +658,13 @@ tcpdump -r capture.pcap
 
 ---
 
-# 13. Firewall and Network Security Testing
+## 13. Firewall and Network Security Testing
 
 Firewalls control network communication according to configured security rules.
 
 Penetration testers evaluate whether firewall policies correctly enforce the intended security boundaries.
 
-## 13.1 Important Firewall Checks
+### 13.1 Important Firewall Checks
 
 1. Are unnecessary ports exposed?
 2. Are administrative ports accessible externally?
@@ -675,7 +675,7 @@ Penetration testers evaluate whether firewall policies correctly enforce the int
 7. Are firewall logs enabled?
 8. Are default-deny policies implemented where appropriate?
 
-## 13.2 Linux Firewall Inspection
+### 13.2 Linux Firewall Inspection
 
 For UFW:
 
@@ -695,7 +695,7 @@ For iptables:
 sudo iptables -L -n -v
 ```
 
-## 13.3 Example Firewall Policy
+### 13.3 Example Firewall Policy
 
 | Source | Destination | Port | Action |
 |---|---|---|---|
@@ -710,11 +710,11 @@ The objective is to ensure that only necessary communication is permitted.
 
 ---
 
-# 14. Wireless Network Penetration Testing
+## 14. Wireless Network Penetration Testing
 
 Wireless penetration testing evaluates the security of Wi-Fi infrastructure.
 
-## Areas to Test
+### Areas to Test
 ![Desktop View](assets/img/netwok/Wireless Network Penetration Testing.jfif){: .w-50 .right}
 - WPA2/WPA3 encryption
 - Weak Wi-Fi passwords
@@ -726,7 +726,7 @@ Wireless penetration testing evaluates the security of Wi-Fi infrastructure.
 - Authentication mechanisms
 - Enterprise Wi-Fi certificates
 
-### Common Tools
+#### Common Tools
 
 - Aircrack-ng
 - Kismet
@@ -734,7 +734,7 @@ Wireless penetration testing evaluates the security of Wi-Fi infrastructure.
 - WiFi Explorer
 - Wifite
 
-### Common Wireless Security Weaknesses
+#### Common Wireless Security Weaknesses
 
 | Weakness | Recommendation |
 |---|---|
@@ -749,7 +749,7 @@ Perform wireless testing only on access points explicitly included in the engage
 
 ---
 
-# 15. Common Network Vulnerabilities
+## 15. Common Network Vulnerabilities
 
 | Vulnerability | Potential Impact | Recommended Control |
 |---|---|---|
@@ -767,7 +767,7 @@ Perform wireless testing only on access points explicitly included in the engage
 
 ---
 
-# 16. Network Penetration Testing Tools
+## 16. Network Penetration Testing Tools
 
 The following tools are commonly used by penetration testers and security analysts.
 
@@ -788,7 +788,7 @@ The following tools are commonly used by penetration testers and security analys
 | BloodHound | Active Directory analysis |
 | NetExec | Network service assessment |
 
-## Recommended Official Resources
+### Recommended Official Resources
 
 - [Nmap](https://nmap.org/)
 - [Wireshark](https://www.wireshark.org/)
@@ -799,11 +799,11 @@ The following tools are commonly used by penetration testers and security analys
 
 ---
 
-# 17. Practical Network Penetration Testing Lab
+## 17. Practical Network Penetration Testing Lab
 
 The best way to learn network penetration testing is through a controlled virtual lab.
 
-## 17.1 Recommended Lab Components
+### 17.1 Recommended Lab Components
 
 | Component | Purpose |
 |---|---|
@@ -814,7 +814,7 @@ The best way to learn network penetration testing is through a controlled virtua
 | Windows Client | Workstation assessment |
 | VirtualBox | Virtualization platform |
 
-## 17.2 Lab Architecture
+### 17.2 Lab Architecture
 
 Example:
 
@@ -834,14 +834,14 @@ Example:
 
 Configure an isolated host-only virtual network. Do not expose intentionally vulnerable systems to your home LAN or the public internet.
 
-## 17.3 Useful Lab Resources
+### 17.3 Useful Lab Resources
 
 - [Kali Linux](https://www.kali.org/)
 - [VirtualBox](https://www.virtualbox.org/)
 - [Metasploitable 2 Documentation](https://docs.rapid7.com/metasploit/metasploitable-2/)
 - [OWASP](https://owasp.org/)
 
-## 17.4 Practical Exercise: Basic Internal Network Assessment
+### 17.4 Practical Exercise: Basic Internal Network Assessment
 
 Assume the following authorized lab:
 
@@ -856,47 +856,47 @@ Network:
 192.168.56.0/24
 ```
 
-### Step 1: Identify Your Network Interface
+#### Step 1: Identify Your Network Interface
 
 ```bash
 ip addr
 ```
 
-### Step 2: Discover Active Hosts
+#### Step 2: Discover Active Hosts
 
 ```bash
 nmap -sn 192.168.56.0/24
 ```
 
-### Step 3: Identify Open Ports
+#### Step 3: Identify Open Ports
 
 ```bash
 nmap -sV 192.168.56.20
 ```
 
-### Step 4: Enumerate Selected Services
+#### Step 4: Enumerate Selected Services
 
 ```bash
 nmap -sV -p 21,22,80,139,445 192.168.56.20
 ```
 
-### Step 5: Inspect HTTP Service
+#### Step 5: Inspect HTTP Service
 
 ```bash
 curl -I http://192.168.56.20
 ```
 
-### Step 6: Inspect SMB Configuration
+#### Step 6: Inspect SMB Configuration
 
 ```bash
 nmap -p 445 --script smb-protocols 192.168.56.20
 ```
 
-### Step 7: Review Vulnerabilities
+#### Step 7: Review Vulnerabilities
 
 Compare discovered software versions and configurations against trusted vendor advisories and vulnerability databases.
 
-### Step 8: Document Findings
+#### Step 8: Document Findings
 
 Record:
 
@@ -909,13 +909,13 @@ Record:
 - Risk ratings
 - Remediation recommendations
 
-### Step 9: Retest
+#### Step 9: Retest
 
 Repeat relevant tests after remediation and compare the results.
 
 ---
 
-# 18. Penetration Testing vs Vulnerability Assessment
+## 18. Penetration Testing vs Vulnerability Assessment
 
 These terms are related but not identical.
 
@@ -928,7 +928,7 @@ These terms are related but not identical.
 | Business impact | Estimates risk | Demonstrates realistic impact |
 | Deliverable | Vulnerability report | Security assessment report |
 
-## Example:
+### Example:
 
 A vulnerability scanner identifies an outdated service.
 
@@ -936,11 +936,11 @@ A penetration tester investigates whether that service is exploitable in the tes
 
 ---
 
-# 19. Standards and Frameworks
+## 19. Standards and Frameworks
 
 Professional penetration testers should understand recognized methodologies.
 
-## 19.1 PTES
+### 19.1 PTES
 
 Penetration Testing Execution Standard.
 
@@ -956,19 +956,19 @@ Covers:
 
 Documentation: [PTES](https://pentest-standard.readthedocs.io/en/latest/tree.html)
 
-## 19.2 NIST SP 800-115
+### 19.2 NIST SP 800-115
 
 Provides guidance on information security testing and assessment.
 
 Documentation: [NIST SP 800-115](https://csrc.nist.gov/pubs/sp/800/115/final)
 
-## 19.3 OWASP Testing Guide
+### 19.3 OWASP Testing Guide
 
 Provides security testing guidance, primarily for web applications.
 
 Documentation: [OWASP Web Security Testing Guide](https://owasp.org/www-project-web-security-testing-guide/)
 
-## 19.4 MITRE ATT&CK
+### 19.4 MITRE ATT&CK
 
 Provides a knowledge base of adversary tactics and techniques.
 
@@ -986,11 +986,11 @@ Documentation: [MITRE ATT&CK](https://attack.mitre.org/)
 
 ---
 
-# 20. Network Penetration Testing Learning Roadmap
+## 20. Network Penetration Testing Learning Roadmap
 
 Follow this roadmap to develop professional network penetration testing skills.
 
-## Level 1: Networking Fundamentals
+### Level 1: Networking Fundamentals
 
 Learn:
 
@@ -1001,7 +1001,7 @@ Learn:
 - Routing and switching
 - VLANs and firewalls
 
-## Level 2: Linux and Windows Fundamentals
+### Level 2: Linux and Windows Fundamentals
 
 Learn:
 
@@ -1012,7 +1012,7 @@ Learn:
 - Users and groups
 - PowerShell and Bash
 
-## Level 3: Network Discovery
+### Level 3: Network Discovery
 
 Learn:
 
@@ -1023,7 +1023,7 @@ Learn:
 - Network mapping
 - Packet analysis
 
-## Level 4: Vulnerability Assessment
+### Level 4: Vulnerability Assessment
 
 Learn:
 
@@ -1034,7 +1034,7 @@ Learn:
 - Security misconfigurations
 - Vulnerability verification
 
-## Level 5: Penetration Testing
+### Level 5: Penetration Testing
 
 Learn:
 
@@ -1045,7 +1045,7 @@ Learn:
 - Lateral movement concepts
 - Active Directory security
 
-## Level 6: Advanced Security Assessment
+### Level 6: Advanced Security Assessment
 
 Learn:
 
@@ -1058,11 +1058,11 @@ Learn:
 
 ---
 
-# 21. Professional Penetration Testing Checklist
+## 21. Professional Penetration Testing Checklist
 
 Use the following checklist during an authorized assessment.
 
-## Planning and Scope
+### Planning and Scope
 
 - [ ] Written authorization obtained
 - [ ] IP ranges and assets documented
@@ -1070,7 +1070,7 @@ Use the following checklist during an authorized assessment.
 - [ ] Testing exclusions identified
 - [ ] Emergency contacts confirmed
 
-## Reconnaissance and Discovery
+### Reconnaissance and Discovery
 
 - [ ] Network interfaces identified
 - [ ] Live hosts discovered
@@ -1078,7 +1078,7 @@ Use the following checklist during an authorized assessment.
 - [ ] Network topology reviewed
 - [ ] DNS information assessed
 
-## Scanning and Enumeration
+### Scanning and Enumeration
 
 - [ ] TCP ports assessed
 - [ ] Relevant UDP ports assessed
@@ -1086,7 +1086,7 @@ Use the following checklist during an authorized assessment.
 - [ ] Operating systems fingerprinted
 - [ ] SMB, SSH, DNS and SNMP assessed
 
-## Vulnerability Assessment
+### Vulnerability Assessment
 
 - [ ] Known CVEs researched
 - [ ] Software patch levels checked
@@ -1094,7 +1094,7 @@ Use the following checklist during an authorized assessment.
 - [ ] Authentication controls reviewed
 - [ ] Firewall rules assessed
 
-## Security Validation
+### Security Validation
 
 - [ ] Findings validated safely
 - [ ] Network segmentation tested
@@ -1102,7 +1102,7 @@ Use the following checklist during an authorized assessment.
 - [ ] Lateral movement paths evaluated
 - [ ] Sensitive information protected
 
-## Reporting and Remediation
+### Reporting and Remediation
 
 - [ ] Evidence collected
 - [ ] Risk ratings assigned
@@ -1112,7 +1112,7 @@ Use the following checklist during an authorized assessment.
 
 ---
 
-# 22. Conclusion
+## 22. Conclusion
 
 Network penetration testing is an essential component of modern cybersecurity.
 
@@ -1138,9 +1138,9 @@ The most effective way to develop these skills is through structured learning an
 
 ---
 
-# 23. References
+## 23. References
 
-## Network Security and Testing
+### Network Security and Testing
 
 - [Nmap Official Documentation](https://nmap.org/book/man.html)
 - [Wireshark Documentation](https://www.wireshark.org/docs/)
@@ -1148,14 +1148,14 @@ The most effective way to develop these skills is through structured learning an
 - [PTES](https://pentest-standard.readthedocs.io/en/latest/tree.html)
 - [MITRE ATT&CK](https://attack.mitre.org/)
 
-## Vulnerability Research
+### Vulnerability Research
 
 - [National Vulnerability Database](https://nvd.nist.gov/)
 - [CVE Program](https://www.cve.org/)
 - [Exploit Database](https://www.exploit-db.com/)
 - [CISA Known Exploited Vulnerabilities Catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog)
 
-## Training and Labs
+### Training and Labs
 
 - [Kali Linux](https://www.kali.org/)
 - [Metasploitable 2](https://docs.rapid7.com/metasploit/metasploitable-2/)
