@@ -2,7 +2,7 @@
 title: "Network Penetration Testing" 
 date: 2026-11-10 00:00:00 +0530
 categories: [Network Security, Penetration Testing, Ethical Hacking]
-tags: [Network, Security, offsec, #CyberSecurity #NetworkPentesting #EthicalHacking #KaliLinux #Nmap #InfoSec #PenetrationTesting]
+tags: [Network, Security, offsec, CyberSecurity, NetworkPentesting, EthicalHacking, KaliLinux, Nmap, InfoSec, PenetrationTesting]
 image:
   path: https://i.pinimg.com/originals/78/47/ec/7847ecea51ed5dab456928bc9bf5213a.gif
 ---
@@ -974,7 +974,7 @@ Covers:
 - Post-exploitation
 - Reporting
 
-Documentation: [PTES](http://www.pentest-standard.org/)
+Documentation: [PTES](https://www.pentest-standard.org/)
 
 ## 19.2 NIST SP 800-115
 
@@ -1164,7 +1164,7 @@ The most effective way to develop these skills is through structured learning an
 - [Nmap Official Documentation](https://nmap.org/book/man.html)
 - [Wireshark Documentation](https://www.wireshark.org/docs/)
 - [NIST SP 800-115](https://csrc.nist.gov/pubs/sp/800/115/final)
-- [PTES](http://www.pentest-standard.org/)
+- [PTES](https://www.pentest-standard.org/)
 - [MITRE ATT&CK](https://attack.mitre.org/)
 
 ### Vulnerability Research
