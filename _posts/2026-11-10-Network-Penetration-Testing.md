@@ -65,10 +65,11 @@ External penetration testing evaluates infrastructure accessible from the public
 - Publicly accessible services
 - Remote administration interfaces
 
-**Objective:** Identify security weaknesses that an external attacker could potentially exploit.
+> **Objective:** Identify security weaknesses that an external attacker could potentially exploit.
+{: .prompt-info }
 
 ## 2.2 Internal Network Penetration Testing
-
+![Desktop View](assets/img/netwok/3.jfif){: .w-50 .right}
 Internal penetration testing evaluates the security of an organization's internal network.
 
 **Examples:**
@@ -81,10 +82,11 @@ Internal penetration testing evaluates the security of an organization's interna
 - Network segmentation
 - Internal authentication systems
 
-**Objective:** Determine what an attacker could accomplish after obtaining internal network access.
+> **Objective:** Determine what an attacker could accomplish after obtaining internal network access.
+{: .prompt-info }
 
 ## 2.3 Wireless Network Penetration Testing
-
+![Desktop View](assets/img/netwok/4.jfif){: .w-50 .right}
 Wireless penetration testing evaluates the security of Wi-Fi infrastructure.
 
 **Testing areas:**
@@ -98,7 +100,7 @@ Wireless penetration testing evaluates the security of Wi-Fi infrastructure.
 - Wireless client isolation
 
 ## 2.4 Cloud Network Penetration Testing
-
+![Desktop View](assets/img/netwok/5.jfif){: .w-50 .right}
 Cloud network penetration testing evaluates network security configurations in cloud environments.
 
 **Examples:**
@@ -112,7 +114,7 @@ Cloud network penetration testing evaluates network security configurations in c
 - Cloud network segmentation
 
 ## 2.5 Network Segmentation Testing
-
+![Desktop View](assets/img/netwok/6.jfif){: .w-50 .right}
 Network segmentation testing determines whether different network zones are properly isolated.
 
 **Examples:**
@@ -123,7 +125,8 @@ Network segmentation testing determines whether different network zones are prop
 - Guest networks
 - Management networks
 
-The objective is to verify that unauthorized communication between network segments is prevented.
+> The objective is to verify that unauthorized communication between network segments is prevented.
+{: .prompt-info }
 
 ---
 
@@ -204,7 +207,8 @@ Prohibited Activities:
 - Unauthorized data extraction
 ```
 
-**Important:** Never test systems outside the explicitly authorized scope.
+> **Important:** Never test systems outside the explicitly authorized scope.
+{: .prompt-warning }
 
 ---
 
@@ -255,7 +259,7 @@ Host discovery determines which devices are active on a network.
 
 One of the most commonly used tools is Nmap.
 
-### Basic Host Discovery
+## Basic Host Discovery
 
 ```bash
 nmap -sn 192.168.10.0/24
@@ -287,9 +291,8 @@ Display available ARP cache entries:
 arp -a
 ```
 
-### Objective
-
-Identify active hosts and create an inventory of network devices for further assessment.
+> **Objective** Identify active hosts and create an inventory of network devices for further assessment.
+{: .prompt-info }
 
 ---
 
@@ -446,7 +449,8 @@ nmap --script vuln 192.168.10.10
 
 This executes relevant vulnerability detection scripts against the specified host.
 
-**Note:** Some vulnerability scripts may be intrusive. Review the scripts and authorization before executing them.
+> **Note:** Some vulnerability scripts may be intrusive. Review the scripts and authorization before executing them.
+{: .prompt-info }
 
 ## 9.2 CVE
 
@@ -524,6 +528,7 @@ Avoid destructive payloads, persistence, uncontrolled credential dumping, and un
 # 11. Post-Exploitation Assessment
 
 Post-exploitation evaluates what an attacker could potentially accomplish after gaining an initial foothold.
+![Desktop View](assets/img/netwok/Lateral movement.jfif)
 
 ## 11.1 Privilege Escalation
 
@@ -605,6 +610,8 @@ The objective is to verify that network security boundaries operate correctly.
 # 12. Network Traffic Analysis
 
 Network traffic analysis helps identify suspicious communications, insecure protocols, and potential security incidents.
+
+![Desktop View](assets/img/netwok/TCP handshake.jfif)
 
 Wireshark is one of the most important tools for this task.
 
@@ -705,7 +712,7 @@ The objective is to ensure that only necessary communication is permitted.
 Wireless penetration testing evaluates the security of Wi-Fi infrastructure.
 
 ### Areas to Test
-
+![Desktop View](assets/img/netwok/Wireless Network Penetration Testing.jfif){: .w-50 .right}
 - WPA2/WPA3 encryption
 - Weak Wi-Fi passwords
 - WPS configuration
