@@ -29,7 +29,7 @@ The primary objective is to evaluate the security posture of network infrastruct
 - Recommend remediation strategies.
 
 ### What Does a Network Penetration Tester Examine?
-![Desktop View](assets/img/netwok/1.jpeg){: .w-60 .right}
+![Desktop View](assets/img/netwok/1.jpeg){: .w-50 .right}
 A typical enterprise network consists of:
 
 - Servers
@@ -53,7 +53,7 @@ A penetration tester evaluates these components to identify security weaknesses 
 Network penetration testing can be divided into several categories.
 
 ## 2.1 External Network Penetration Testing
-
+![Desktop View](assets/img/netwok/2.jfif){: .w-50 .right}
 External penetration testing evaluates infrastructure accessible from the public internet.
 
 **Examples:**
