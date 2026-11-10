@@ -944,7 +944,7 @@ Covers:
 - Post-exploitation
 - Reporting
 
-Documentation: [PTES]([https://www.pentest-standard.org/],(https://pentest-standard.readthedocs.io/en/latest/tree.html))
+Documentation: [PTES](https://pentest-standard.readthedocs.io/en/latest/tree.html)
 
 ## 19.2 NIST SP 800-115
 
@@ -1134,7 +1134,7 @@ The most effective way to develop these skills is through structured learning an
 - [Nmap Official Documentation](https://nmap.org/book/man.html)
 - [Wireshark Documentation](https://www.wireshark.org/docs/)
 - [NIST SP 800-115](https://csrc.nist.gov/pubs/sp/800/115/final)
-- [PTES]([https://www.pentest-standard.org/](https://pentest-standard.readthedocs.io/en/latest/tree.html))
+- [PTES](https://pentest-standard.readthedocs.io/en/latest/tree.html)
 - [MITRE ATT&CK](https://attack.mitre.org/)
 
 ### Vulnerability Research
