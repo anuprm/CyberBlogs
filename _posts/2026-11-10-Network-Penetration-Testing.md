@@ -29,7 +29,7 @@ The primary objective is to evaluate the security posture of network infrastruct
 - Recommend remediation strategies.
 
 ### What Does a Network Penetration Tester Examine?
-(assets/img/netwok/1.jpeg){: .w-60 .right}
+(assets/img/netwok/1.jpeg){: .w-50 .right}
 A typical enterprise network consists of:
 
 - Servers
