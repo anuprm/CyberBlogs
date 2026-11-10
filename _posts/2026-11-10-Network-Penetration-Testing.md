@@ -614,8 +614,6 @@ The objective is to verify that network security boundaries operate correctly.
 
 Network traffic analysis helps identify suspicious communications, insecure protocols, and potential security incidents.
 
-![Desktop View](assets/img/netwok/TCP handshake.jfif)
-
 Wireshark is one of the most important tools for this task.
 
 ### 12.1 Useful Wireshark Display Filters
