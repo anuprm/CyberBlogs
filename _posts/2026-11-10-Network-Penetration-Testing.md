@@ -9,36 +9,6 @@ image:
 
 # Network Penetration Testing: A Complete Beginner-to-Advanced Guide
 
----
-
-## Table of Contents
-
-1. [Introduction to Network Penetration Testing](#1-introduction-to-network-penetration-testing)
-2. [Types of Network Penetration Testing](#2-types-of-network-penetration-testing)
-3. [Penetration Testing Approaches](#3-penetration-testing-approaches)
-4. [Network Penetration Testing Methodology](#4-network-penetration-testing-methodology)
-5. [Reconnaissance](#5-reconnaissance)
-6. [Host Discovery](#6-host-discovery)
-7. [Port Scanning](#7-port-scanning)
-8. [Service Enumeration](#8-service-enumeration)
-9. [Vulnerability Assessment](#9-vulnerability-assessment)
-10. [Exploitation and Security Validation](#10-exploitation-and-security-validation)
-11. [Post-Exploitation Assessment](#11-post-exploitation-assessment)
-12. [Network Traffic Analysis](#12-network-traffic-analysis)
-13. [Firewall and Network Security Testing](#13-firewall-and-network-security-testing)
-14. [Wireless Network Penetration Testing](#14-wireless-network-penetration-testing)
-15. [Common Network Vulnerabilities](#15-common-network-vulnerabilities)
-16. [Network Penetration Testing Tools](#16-network-penetration-testing-tools)
-17. [Practical Network Penetration Testing Lab](#17-practical-network-penetration-testing-lab)
-18. [Penetration Testing vs Vulnerability Assessment](#18-penetration-testing-vs-vulnerability-assessment)
-19. [Standards and Frameworks](#19-standards-and-frameworks)
-20. [Learning Roadmap](#20-learning-roadmap)
-21. [Professional Penetration Testing Checklist](#21-professional-penetration-testing-checklist)
-22. [Conclusion](#22-conclusion)
-23. [References](#23-references)
-
----
-
 # 1. Introduction to Network Penetration Testing
 
 Network Penetration Testing (Network Pentesting) is an authorized cybersecurity assessment in which security professionals simulate real-world attacks against an organization's network infrastructure to identify vulnerabilities, misconfigurations, weak security controls, and potential attack paths.
