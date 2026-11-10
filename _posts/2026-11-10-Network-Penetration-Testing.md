@@ -5,9 +5,11 @@ categories: [Network Security, Penetration Testing, Ethical Hacking]
 tags: [Network, Security, offsec, CyberSecurity, NetworkPentesting, EthicalHacking, KaliLinux, Nmap, InfoSec, PenetrationTesting]
 image:
   path: https://i.pinimg.com/originals/78/47/ec/7847ecea51ed5dab456928bc9bf5213a.gif
+  
 ---
 
 # Network Penetration Testing: A Complete Beginner-to-Advanced Guide
+---
 
 # 1. Introduction to Network Penetration Testing
 
@@ -69,8 +71,9 @@ External penetration testing evaluates infrastructure accessible from the public
 {: .prompt-info }
 
 ## 2.2 Internal Network Penetration Testing
-![Desktop View](assets/img/netwok/3.jfif){: .w-50 .right}
+
 Internal penetration testing evaluates the security of an organization's internal network.
+![Desktop View](assets/img/netwok/3.jfif){: .w-50 .right}
 
 **Examples:**
 
@@ -86,8 +89,9 @@ Internal penetration testing evaluates the security of an organization's interna
 {: .prompt-info }
 
 ## 2.3 Wireless Network Penetration Testing
-![Desktop View](assets/img/netwok/4.jfif){: .w-50 .right}
+
 Wireless penetration testing evaluates the security of Wi-Fi infrastructure.
+![Desktop View](assets/img/netwok/4.jfif){: .w-50 .right}
 
 **Testing areas:**
 
@@ -125,8 +129,7 @@ Network segmentation testing determines whether different network zones are prop
 - Guest networks
 - Management networks
 
-> The objective is to verify that unauthorized communication between network segments is prevented.
-{: .prompt-info }
+The objective is to verify that unauthorized communication between network segments is prevented.
 
 ---
 
@@ -208,7 +211,7 @@ Prohibited Activities:
 ```
 
 > **Important:** Never test systems outside the explicitly authorized scope.
-{: .prompt-warning }
+{: .prompt-danger }
 
 ---
 
@@ -450,7 +453,7 @@ nmap --script vuln 192.168.10.10
 This executes relevant vulnerability detection scripts against the specified host.
 
 > **Note:** Some vulnerability scripts may be intrusive. Review the scripts and authorization before executing them.
-{: .prompt-info }
+{: .prompt-warning }
 
 ## 9.2 CVE
 
