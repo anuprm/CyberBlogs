@@ -1,5 +1,6 @@
 ---
 title: "OWASP Top 10: Web Application Security" 
+description: OWASP Top 10: A Comprehensive Guide to Web Application Security (2025).
 date: 2026-11-08 00:00:00 +0530
 categories: [Web Security]
 tags: [Web, Security, offsec, AppSec]
@@ -8,7 +9,6 @@ image:
 ---
 
 # OWASP Top 10: A Comprehensive Guide to Web Application Security (2025)
-
 > A practical guide to understanding, identifying, testing, and mitigating the most critical web application security vulnerabilities.
 
 ![OWASP](https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/OWASP_black_logo.svg/500px-OWASP_black_logo.svg.png)
