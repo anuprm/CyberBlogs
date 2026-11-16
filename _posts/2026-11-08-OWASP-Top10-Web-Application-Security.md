@@ -1,7 +1,7 @@
 ---
 title: "OWASP Top 10: Web Application Security" 
 date: 2026-11-08 00:00:00 +0530
-categories: [OWASP Top 10, Web Security]
+categories: [Web Security, OWASP Top 10]
 tags: [Web, Security, offsec, AppSec]
 image:
   path: https://i.pinimg.com/originals/ce/13/d8/ce13d8fa9d17ec31e7b80934f46f8f6f.gif
